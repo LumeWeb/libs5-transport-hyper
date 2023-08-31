@@ -15,6 +15,7 @@ export default class HyperTransportPeer extends BasePeer {
       peer: any;
       muxer: any;
       protocol: string;
+      socket?: any;
     },
   ) {
     super(options);
