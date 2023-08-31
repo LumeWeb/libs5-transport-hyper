@@ -1,5 +1,12 @@
 {
   "preset": [
     "@lumeweb/node-library-preset"
-  ]
+  ],
+  "config": {
+    "tsconfig": {
+      "compilerOptions": {
+        "moduleResolution": "node"
+      }
+    }
+  }
 }
