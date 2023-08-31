@@ -1,3 +1,10 @@
+# [0.1.0-develop.5](https://git.lumeweb.com/LumeWeb/libs5-transport-hyper/compare/v0.1.0-develop.4...v0.1.0-develop.5) (2023-08-31)
+
+
+### Bug Fixes
+
+* change approach to make socket optional ([d22c757](https://git.lumeweb.com/LumeWeb/libs5-transport-hyper/commit/d22c757c520e38f71ef0a303a3e116013555d01b))
+
 # [0.1.0-develop.4](https://git.lumeweb.com/LumeWeb/libs5-transport-hyper/compare/v0.1.0-develop.3...v0.1.0-develop.4) (2023-08-31)
 
 
