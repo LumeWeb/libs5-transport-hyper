@@ -1,4 +1,4 @@
-import { BasePeer, Logger } from "@lumeweb/libs5";
+import { BasePeer, Logger, PeerConstructorOptions } from "@lumeweb/libs5";
 import { URL } from "url";
 import { Buffer } from "buffer";
 import { Readable } from "streamx";
@@ -10,7 +10,13 @@ export default class HyperTransportPeer extends BasePeer {
   protected _socket = new Readable();
   private _pipe?: any;
 
-  constructor(options: any) {
+  constructor(
+    options: PeerConstructorOptions & {
+      peer: any;
+      muxer: any;
+      protocol: string;
+    },
+  ) {
     super(options);
     const { peer, muxer, protocol } = options;
     this._peer = peer;
