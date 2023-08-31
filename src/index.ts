@@ -3,6 +3,8 @@ import { URL } from "url";
 import { Buffer } from "buffer";
 import { Readable } from "streamx";
 
+type OmitSocket<T> = Omit<T, "socket">;
+
 export default class HyperTransportPeer extends BasePeer {
   private _peer: any;
   private _muxer: any;
@@ -11,14 +13,16 @@ export default class HyperTransportPeer extends BasePeer {
   private _pipe?: any;
 
   constructor(
-    options: PeerConstructorOptions & {
+    options: OmitSocket<PeerConstructorOptions> & {
       peer: any;
       muxer: any;
       protocol: string;
-      socket?: any;
     },
   ) {
-    super(options);
+    super({
+      ...options,
+      socket: undefined,
+    });
     const { peer, muxer, protocol } = options;
     this._peer = peer;
     this._muxer = muxer;
