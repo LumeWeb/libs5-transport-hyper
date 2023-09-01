@@ -83,6 +83,6 @@ export default class HyperTransportPeer extends BasePeer {
   }
 
   sendMessage(message: Uint8Array): void {
-    this._pipe.write(message);
+    this._pipe.send(message);
   }
 }
