@@ -1,3 +1,5 @@
+# [0.1.0-develop.12](https://git.lumeweb.com/LumeWeb/libs5-transport-hyper/compare/v0.1.0-develop.11...v0.1.0-develop.12) (2023-09-01)
+
 # [0.1.0-develop.11](https://git.lumeweb.com/LumeWeb/libs5-transport-hyper/compare/v0.1.0-develop.10...v0.1.0-develop.11) (2023-09-01)
 
 # [0.1.0-develop.10](https://git.lumeweb.com/LumeWeb/libs5-transport-hyper/compare/v0.1.0-develop.9...v0.1.0-develop.10) (2023-09-01)
