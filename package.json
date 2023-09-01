@@ -24,7 +24,7 @@
         "lib"
     ],
     "dependencies": {
-        "@lumeweb/libs5": "^0.1.0-develop.18",
+        "@lumeweb/libs5": "^0.1.0-develop.19",
         "streamx": "^2.15.1"
     }
 }
