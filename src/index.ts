@@ -85,4 +85,9 @@ export default class HyperTransportPeer extends BasePeer {
   sendMessage(message: Uint8Array): void {
     this._pipe.send(message);
   }
+
+  end(): void {
+    this._pipe.end();
+    this._socket.end();
+  }
 }
